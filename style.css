@@ -1,0 +1,559 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1350px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Light/Dark Mode Toggle */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body.night {
+    background-color: #2b3538;
+    transition: 0.5s;
+}
+
+.toggle {
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    background-color: #fff;
+    border: 2px solid #2b3538;
+    width: 45px;
+    height: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.toggle.active {
+    background-color: #2b3538;
+    border: 2px solid #fff;
+}
+
+.toggle:before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 12px;
+    height: 12px;
+    background-color: #2b3538;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.toggle.active:before {
+    left: 27px;
+    background-color: #fff;
+}
+
+/* Container */
+.container {
+    margin: auto;
+}
+
+/* Heading */
+.content-heading {
+    width: 675px;
+    height: 650px;
+    margin-top: 100px;
+}
+
+.content-heading-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 675px);
+    text-align: right;
+    
+    width: 640px;
+    height: 520px;
+    margin: 40px;
+    
+}
+
+.content-heading-item {
+    position: relative;
+    z-index: 1;
+    top : 15%;
+    left: 0%;
+    height: 70%;
+    background-color: #69bfd6;
+}
+
+.picture {
+    position : relative;
+    right: 10%;
+}
+
+.content-heading-item h3 {
+    font-size: 25px;
+    font-family: Ubuntu;
+    color: #fff;
+    margin: 110px 88px 0 0;
+}
+
+.content-heading-item h1 {
+    font-size: 50px;
+    font-family: League Spartan;
+    color: #fff;
+    margin: 0px 88px 42px;
+}
+
+.content-heading-item h2 {
+    font-size: 30px;
+    font-family: Ubuntu;
+    color: #fff;
+    margin-right: 88px;
+}
+
+.content-heading-item img {
+    width: 100%;
+}
+
+/* Education */
+.content-education {
+    width: 100%;
+    margin-top: 63px;
+}
+
+.content-education-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    margin: auto;
+}
+
+.content-education-item h1 {
+    font-size: 50px;
+    font-family: League Spartan;
+    color: #2b3538;
+} 
+
+body.night .content-education-item h1 {
+    color: #fff;
+}
+
+body.night .content-education-item h2 {
+    color: #fff;
+}
+
+body.night .content-education-item p {
+    color: #fff;
+}
+
+.content-education-item:nth-child(1) {
+    text-align: center;
+    grid-row: 1/6;
+    width: 87%;
+    border-right: 8px solid #69bfd6;
+    padding-top: 10%;
+}
+
+.content-education-item:nth-child(2) h2{
+    font-size: 30px;
+    font-family: League Spartan;
+    color: #2b3538;
+}
+
+.content-education-item:nth-child(3) h2{
+    font-size: 20px;
+    font-family: Ubuntu;
+    margin-top: 45px;
+    color: #2b3538;
+}
+
+.content-education-item:nth-child(4) p{
+    font-size: 14px;
+    font-family: Ubuntu;
+    color: #2b3538;
+}
+
+.content-education-item:nth-child(5) h2{
+    font-size: 20px;
+    font-family: Ubuntu;
+    margin-top: 55px;
+    color: #2b3538;
+}
+
+.content-education-item:nth-child(6) p{
+    font-size: 14px;
+    font-family: Ubuntu;
+    color: #2b3538;
+}
+
+/* Hard Skill */
+.content-hardskill {
+    width: 100%;
+    height: auto;
+    margin-top: 60px;
+}
+
+.content-hardskill-grid {
+    display: grid;
+    grid-template-columns: 640px 285px 430px;
+    justify-content: center;
+}
+
+.content-hardskill-item h2 {
+    font-size: 50px;
+    font-family: League Spartan;
+    color: #fff;
+} 
+
+.content-hardskill-item img {
+    margin-left: 110px;
+    width: 100px;
+    height: 100px;
+    margin-top: 1rem;
+}
+
+.content-hardskill-item h3 {
+    font-size: 15px;
+    font-family: Ubuntu;
+    font-weight: bold;
+    color: #69bfd6;
+    margin: 30px 0 0 50px;
+}
+
+.content-hardskill-item ul li {
+    font-size: 14px;
+    font-family: Ubuntu;
+    color: #2b3538;
+    margin-left: 50px;
+}
+
+body.night .content-hardskill-item ul li {
+    color: #fff;
+}
+
+.content-hardskill-item:nth-child(1) {
+    grid-row: 1/4;
+    text-align: center;
+    background-color: #69bfd6;
+    padding: 30%;
+}
+
+/* Soft Skill */
+.content-softskill {
+    width: 100%;
+    height: auto;
+}
+
+.content-softskill-grid {
+    display: grid;
+    grid-template-columns: 640px 285px 430px;
+    justify-content: center;
+}
+
+.content-softskill-item h2 {
+    font-size: 50px;
+    font-family: League Spartan;
+    color: #2b3538;
+} 
+
+body.night .content-softskill-item h2 {
+    color: #fff;
+}
+
+.content-softskill-item img {
+    margin-left: 110px;
+    width: 100px;
+    height: 100px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    
+}
+
+/*.content-softskill-item:nth-child(6) {
+    margin-bottom: 2rem;
+}*/
+
+.content-softskill-item h3 {
+    font-size: 15px;
+    font-family: Ubuntu;
+    font-weight: bold;
+    color: #2b3538;
+    margin: 30px 0 0 50px;
+    padding-top: 1.5rem;
+}
+
+.content-softskill-item p {
+    font-size: 14px;
+    font-family: Ubuntu;
+    margin-left: 50px;
+    color: #fff;
+}
+
+.content-softskill-item:nth-child(1) {
+    grid-row: 1/4;
+    text-align: center;
+    background: none;
+    padding-top: 30%;
+}
+
+.content-softskill-item {
+    background-color: #69bfd6;
+}
+
+/* Contact */
+.content-contact {
+    text-align: center;
+    margin: 90px 0;
+}
+
+.content-contact h2 {
+    font-size: 35px;
+    font-family: League Spartan;
+    color: #2b3538;
+
+}
+
+body.night .content-contact h2 {
+    color: #fff;
+}
+
+.content-contact h3 {
+    font-size: 15px;
+    font-family: Ubuntu;
+    color: #69bfd6;
+    margin-top: 65px;
+}
+
+.content-contact p {
+    font-size: 14px;
+    font-family: Ubuntu;
+    color: #2b3538;
+    margin-top: 35px;
+}
+
+body.night .content-contact p {
+    color: #fff;
+}
+
+@media only screen and (max-width: 480px) {
+
+    /* Heading */
+    .content-heading-grid {
+        grid-template-columns: auto;
+    }
+
+    .content-heading-item {
+        width: 65%;
+        height: 90%;
+    }
+
+    .content-heading-item h3 {
+        font-size: 10px;
+        margin: 20px 8px 0 0;
+    }
+
+    .content-heading-item h1 {
+        font-size: 20px;
+        margin: 0 8px 42px;
+    }
+
+    .content-heading-item h2 {
+        font-size: 12px;
+        margin-right: 8px;
+    }
+
+    .picture {
+        right: 53%;
+        width: 50%;
+    }
+
+    /* Education */
+    .content-education-item h1 {
+        font-size: 25px;
+    }
+
+    .content-education-item:nth-child(2) h2 {
+        font-size: 20px;
+    }
+
+    .content-education-item:nth-child(3) h2 {
+        font-size: 18px;
+    }
+
+    .content-education-item:nth-child(4) p {
+        font-size: 12px;
+    }
+
+    .content-education-item:nth-child(5) h2 {
+        font-size: 18px;
+    }
+
+    .content-education-item:nth-child(6) p {
+        font-size: 12px;
+    }
+
+    /* Hard Skill */
+    .content-hardskill-grid {
+        grid-template-columns: auto;
+        align-content: center;
+    }
+
+    .content-hardskill-item:nth-child(1) {
+        grid-row: 1/2;
+        padding: 4%;
+    }
+
+    .content-hardskill-item img {
+        margin-left: 80px;
+    }
+
+    .content-hardskill-item h3 {
+        font-size: 14px;
+        margin: 10px 0 0;
+    }
+    
+    .content-hardskill-item ul li {
+        font-size: 12px;
+        text-align: center;
+        margin: 5px;
+        list-style: none;
+    }
+
+    /* Soft Skill */
+    .content-softskill-grid {
+        grid-template-columns: auto;
+        align-content: center;
+    }
+
+    .content-softskill-item img {
+        margin-left: 120px;
+    }
+
+    .content-softskill-item h3 {
+        font-size: 14px;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .content-softskill-item p {
+        font-size: 12px;
+        margin-top: 5px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* Heading */
+    .content-heading-grid {
+        grid-template-columns: auto;
+    }
+
+    .content-heading-item {
+        width: 100%;
+        height: 90%;
+    }
+
+    .content-heading-item h3 {
+        font-size: 10px;
+        margin: 20px 8px 0 0;
+    }
+
+    .content-heading-item h1 {
+        font-size: 20px;
+        margin: 0 8px 42px;
+    }
+
+    .content-heading-item h2 {
+        font-size: 12px;
+        margin-right: 8px;
+    }
+
+    .picture {
+        right: 51%;
+        width: 52%;
+    }
+
+    /* Education */
+    .content-education-item h1 {
+        font-size: 25px;
+    }
+
+    .content-education-item:nth-child(2) h2 {
+        font-size: 20px;
+    }
+
+    .content-education-item:nth-child(3) h2 {
+        font-size: 18px;
+    }
+
+    .content-education-item:nth-child(4) p {
+        font-size: 12px;
+    }
+
+    .content-education-item:nth-child(5) h2 {
+        font-size: 18px;
+    }
+
+    .content-education-item:nth-child(6) p {
+        font-size: 12px;
+    }
+
+    /* Hard Skill */
+    .content-hardskill-grid {
+        grid-template-columns: auto;
+        align-content: center;
+    }
+
+    .content-hardskill-item:nth-child(1) {
+        grid-row: 1/2;
+        padding: 4%;
+    }
+
+    .content-hardskill-item img {
+        margin-left: 78px;
+    }
+
+    .content-hardskill-item h3 {
+        font-size: 14px;
+        margin: 10px 0 0;
+        text-align: center;
+    }
+    
+    .content-hardskill-item ul li {
+        font-size: 12px;
+        text-align: center;
+        margin: 5px;
+        list-style: none;
+    }
+
+    /* Soft Skill */
+    .content-softskill-grid {
+        grid-template-columns: auto;
+        align-content: center;
+    }
+
+    .content-softskill-item img {
+        margin-left: 93px;
+    }
+
+    .content-softskill-item h3 {
+        font-size: 14px;
+        margin: 10px 0 0;
+        text-align: center;
+    }
+
+    .content-softskill-item p {
+        font-size: 12px;
+        text-align: center;
+        margin: 5px;
+    }
+
+    .content-softskill-item:nth-child(6) {
+        margin-bottom: 0rem;
+    }
+}
