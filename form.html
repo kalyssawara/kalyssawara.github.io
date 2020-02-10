@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Booking Form</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: top;
+            background-image: url(https://images.pexels.com/photos/37728/pexels-photo-37728.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+            width: 100%;
+            height: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .box {
+            margin: 100px auto;
+            padding: 30px;
+            width: 400px;
+            height: auto;
+            background-color: #fff;
+            opacity: 0.6;
+            border-radius: 5px;
+        }
+
+        h4 {
+            font-size: 14px;
+            font-weight: lighter;
+            padding: 10px 0;
+        }
+
+        .flying-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: center;
+        }
+
+        #cities {
+            width: 130px;
+            height: 30px;
+        }
+
+        .date-flying-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: center;
+        }
+
+        .date-flying-item input[type="date"] {
+            height: 30px;
+            border: 1px solid #abb4b9;
+            border-radius: 5px;
+        }
+
+        .amount-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            justify-items: center;
+        }
+
+        #adult {
+            height: 30px;
+        }
+
+        #child {
+            height: 30px;
+        }
+
+        #infant {
+            height: 30px;
+        }
+
+        #currency {
+            height: 30px;
+        }
+
+        button {
+            display: block;
+            margin: 20px auto;
+            width: 300px;
+            height: 30px;
+            background-color: #b6dced;
+            border: 1px solid #b6dced;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container"></div>
+
+    <div class="box">
+
+        <div class="flying-grid">
+            <div class="flying-item">
+                <h4>Flying from</h4>
+
+                <select id="cities">
+                    <option value="bangkok">Bangkok, Thailand</option>
+                    <option value="phuket">Phuket, Thailand</option>
+                    <option value="la">Los Angeles, USA</option>
+                    <option value="newyork">New York, USA</option>
+                    <option value="tokyo">Tokyo, Japan</option>
+                    <option value="beijing">Beijing, China</option>
+                    <option value="london">london, UK</option>
+                    <option value="madrid">Madrid, Spain</option>
+                    <option value="berlin">Berlin, Germany</option>
+                    <option value="paris">Paris, France</option>
+                    <option value="zurich">Zurich, Switzerland</option>
+                    <option value="sydney">Sydney, Australia</option>
+                    <option value="seoul">Seoul, South Korea</option> 
+                </select>
+            </div>
+
+            <div class="flying-item">
+                <h4>To</h4>
+
+                <select id="cities">
+                    <option value="bangkok">Bangkok, Thailand</option>
+                    <option value="phuket">Phuket, Thailand</option>
+                    <option value="la">Los Angeles, USA</option>
+                    <option value="newyork">New York, USA</option>
+                    <option value="tokyo">Tokyo, Japan</option>
+                    <option value="beijing">Beijing, China</option>
+                    <option value="london">london, UK</option>
+                    <option value="madrid">Madrid, Spain</option>
+                    <option value="berlin">Berlin, Germany</option>
+                    <option value="paris">Paris, France</option>
+                    <option value="zurich">Zurich, Switzerland</option>
+                    <option value="sydney">Sydney, Australia</option>
+                    <option value="seoul">Seoul, South Korea</option> 
+                </select>
+            </div>
+        </div>
+
+        <div class="date-flying-grid">
+            <div class="date-flying-item">
+                <h4>Departing</h4>
+                <input type="date">
+            </div>
+
+            <div class="date-flying-item">
+                <h4>Returning</h4>
+                <input type="date">
+            </div>
+        </div>
+
+        <div class="amount-grid">
+            <div class="amount-item">
+                <h4>Adult</h4>
+                <select id="adult">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+            </div>
+
+            <div class="amount-item">
+                <h4>Child</h4>
+                <select id="child">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+            </div>
+
+            <div class="amount-item">
+                <h4>Infant</h4>
+                <select id="infant">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+            </div>
+
+            <div class="amount-item">
+                <h4>Currency</h4>
+                <select id="currency">
+                    <option value="thb">THB</option>
+                    <option value="usd">USD</option>
+                    <option value="jpy">JPY</option>
+                    <option value="cny">CNY</option>
+                    <option value="gsb">GSB</option>
+                    <option value="eur">EUR</option>
+                    <option value="aud">AUD</option>
+                    <option value="krw">KRW</option>
+                    <option value="chf">CHF</option>
+                    <option value="sgd">SGD</option>
+                </select>
+            </div>
+            
+        </div>
+
+        <button type="submit">SEARCH</button>
+    </div>
+    </div>
+</body>
+
+</html>
